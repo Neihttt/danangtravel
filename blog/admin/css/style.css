@@ -1,0 +1,39 @@
+body {
+	background-image: url(../img/16668.jpg);
+	background-size: cover;
+}
+
+.login-form {
+	max-width: 50vh;
+	max-height: 70vh;
+	margin: auto;
+	padding: auto;
+	margin-top: 300px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 10px;
+}
+
+.form-group {
+	padding: 5px 30px;
+	margin: 30px 0px;
+}
+
+.btn {
+	margin-left: 25%;
+	width: 50%;
+	border-radius: 24px;
+}
+
+
+.login {
+	height: 350px;
+}
+.login input[type="email"], .login input[type="password"]{
+	width: 70%;
+	margin: auto;
+	transition: 0.5s;
+	border-radius: 24px;
+}
+.login input[type="email"]:focus, .login input[type="password"]:focus{
+	width: 100%;
+}

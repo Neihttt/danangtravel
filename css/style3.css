@@ -1,0 +1,426 @@
+body{
+	font-size:13px;
+	width:100%;
+	margin:0px auto !important;
+	font-family: 'Roboto', sans-serif;
+}
+
+.breadcrumb1{
+	width: 1100px !important;
+	height: 48px;
+	margin: 0px auto !important;
+}
+.breadcrumb1 nav{
+	width: 1100px !important;
+	height: 48px;
+}
+
+/*MENU*/
+.clearfix{
+	clear: both;
+}
+#wrapper {
+    width: 100% !important;
+    margin: 0px auto !important;
+    display: block;
+    background: #EEEEEE;
+}
+
+#wrapper .header nav{
+	background-color: #EEEEEE !important;
+	font-size:14px !important;
+	font-weight: bold;
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+	width: 1100px;
+	margin: 0px auto;
+}
+.logo{
+	height: 60px !important;
+	width: auto !important;
+
+}
+
+
+/*MAIN*/
+
+.container{
+	width: 1100px;
+	margin: 0px auto !important;
+  	height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin-top: 10px;
+}
+.container .row {
+	margin-top: 10px;
+}
+.container .right {
+	width: 800px;
+  	height: 100%;
+  	margin-right: 20px;
+}
+.container .right .info p {
+	font-size: 13px;
+}
+.container .right .info ul li {
+	font-size: 13px;
+}
+.container .left {
+	width: 280px;
+  	height: 270px;
+  	background-color:  #EEEEEE;
+  	font-size: 13px;
+}
+.container .left .tin{
+	height: 270px;
+}
+.container .left .tin h6 {
+	width: 280px;
+  	height: 45px;
+  	line-height: 45px;
+  	color: white;
+  	background-color: #818B90;
+  	padding-left: 10px;
+  	font-weight: bold;
+}
+.container .left .tin .tin1 {
+	text-align: center;
+	padding: 0px 15px;
+}
+.container .left .tin2 {
+	height: 387px;
+	margin-top: 30px;
+	background-color:  #EEEEEE;
+}
+.container .left .tin2 i {
+	padding-right: 10px;
+	color: #43A536;
+}
+.container .left .tin3 h6 {
+	height: 40px;
+	line-height: 40px;
+  	color: black;
+  	font-weight: bold;
+  	text-align: center;
+  	margin: 0px;
+  	border-bottom: 2px solid #818B90;
+}
+.container .left .tin2 .tin3 {
+	padding: 10px 20px;
+}
+
+
+
+/*FOOTER*/
+#main1 #left1{
+	width: 100%;	
+	float:left;
+}
+#main1 #left1{
+	margin-top: 10px;
+}
+#footer{
+	margin: 0px auto;
+	width: 100%;
+	height: 100%;
+	background-color: #EEEEEE;
+}
+#footer .footer1{
+	margin: 0px auto;
+	width: 1100px;
+	height: 100%;
+}
+.about{
+	width: 285px;
+	float: left;
+	margin-right: 5px;
+}
+.about #trai{
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.about p{
+	font-size: 13px;
+	margin-top: 10px;
+	color: #6C6666;
+}
+.about span{
+	font-size: 13px;
+	font-weight: bold;
+}
+.about a{
+	color: #92918f;
+}
+.about a:hover{
+	text-decoration: none;
+	color: orange;
+}
+.contact{
+	width: 270px;
+	float: left;
+}
+.contact p{
+	font-size: 13px;
+	margin-top: 10px;
+	color: #6C6666;
+}
+.contact span{
+	font-size: 15px;
+	font-weight: bold;
+}
+.contact i{
+	font-size: 15px;
+	margin-right: 5px;
+}
+.contact a{
+	color: #92918f;
+}
+.contact a:hover{
+	text-decoration: none;
+	color: orange;
+}
+.link{
+	clear:both;
+}
+
+.link1 {
+  background-color: #818B90;
+  font-size: 14px;
+  color: white;
+}
+
+.back-to-top {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 100px;
+    bottom: 30px;s
+    font-size: 32px;
+    opacity: 0.8;
+    z-index: 9999;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background: #4682B4;
+    line-height: 40px;
+    text-align: center;
+}
+.back-to-top i{
+    color: white;
+    transform: rotate(90deg);
+    width: 30px;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+
+/*LOGIN-ACCOUNT*/
+.input-field,
+.button-tai-khoan {
+    margin: 25px 0;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    transition: .4s;
+}
+
+input:focus {
+    border: 1px solid #1DA1F2;
+}
+
+.input-field label,
+span.show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-field label {
+    left: 15px;
+    pointer-events: none;
+    color: grey;
+    font-size: 18px;
+    transition: .4s;
+}
+
+span.show {
+    right: 20px;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:valid~span.show {
+    visibility: visible;
+}
+
+input:focus~label,
+input:valid~label {
+    transform: translateY(-33px);
+    background: white;
+    font-size: 16px;
+    color: #1DA1F2;
+}
+
+.button-tai-khoan {
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 111;
+}
+
+.button-tai-khoan .inner {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+    background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+}
+
+.button-tai-khoan:hover .inner {
+    left: 0;
+}
+
+.button-tai-khoan input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .auth {
+    margin: 35px 0 20px 0;
+    font-size: 19px;
+    color: grey;
+}
+
+.links {
+    display: flex;
+    cursor: pointer;
+}
+
+.facebook,
+.google {
+    height: 40px;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 3px;
+    margin: 0 10px;
+    transition: .4s;
+}
+
+.facebook:hover {
+    border: 1px solid #4267B2;
+}
+
+.google:hover {
+    border: 1px solid #dd4b39;
+}
+
+.facebook i,
+.facebook span {
+    color: #4267B2;
+}
+
+.google i,
+.google span {
+    color: #dd4b39;
+}
+
+.links i {
+    font-size: 23px;
+    line-height: 40px;
+    margin-left: 30px;
+}
+
+.links span {
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.signup {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.signup a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.font-tk a {
+    margin-left: 5px;
+    color: rgb(119, 119, 119);
+}
+
+.font-tk a:hover {
+    color: rgb(119, 119, 119);
+}
+
+.font-tk,
+.dropdown-tk {
+    margin-top: 12px;
+}
+
+.tai-khoan,
+.dashboard-tai-khoan-khach-hang,
+.dashboard-tai-khoan-admin {
+    display: flex;
+    font-size: 15px;
+}
+
+.icon-tk img {
+    height: 50px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+}
+
+.dang-xuat-home {
+    margin: 10px 20px;
+    width: 85%;
+}
+.item-tai-khoan:hover{
+  color: orange !important;
+  transition-duration: 0.2s;
+}
+
+.item-tai-khoan{
+  transition-duration: 0.5s;
+}
+

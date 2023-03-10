@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ngành Du Lịch Đà Nẵng Tăng Cường Công Tác Phòng Chống Dịch Covid-19</title>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/func.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/png" href="../img/icon/logo-mobile2@.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style-baiviet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script>document.getElementsByTagName("html")[0].className += " js";</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/3e32986497.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+</head>
+<body >
+	<div class="main">
+		<!--menu-->
+		<div class="logo_menu">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="../img/icon/logo-mobile2@.png" class="navbar-brand" id="logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html">TRANG CHỦ <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../page/tin-tuc.html">TIN TỨC</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../page/diem-du-lich.html">ĐIỂM DU LỊCH</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="../page/trai-nghiem.html" id="navbarDropdown">
+									TRẢI NGHIỆM
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="../page/khach-san.html" id="navbarDropdown">
+									KHÁCH SẠN
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../page/lien-he.html">LIÊN HỆ</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0"onsubmit = "return check_search()">
+							<input class="form-control mr-sm-2" type="search" placeholder="Từ khóa..." aria-label="Search" id="search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!--end menu-->
+		<!--content-->
+		<div class="container-fluid clearfix">
+			<div class="leftcontent">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="../index.html">TRANG CHỦ</a></li>
+						<li class="breadcrumb-item"><a href="#">TIN TỨC</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Ngành Du Lịch Đà Nẵng Tăng Cường Công Tác Phòng Chống Dịch Covid-19</li>
+					</ol>
+				</nav>
+				<!-- Facebook -->
+				<div class="share">
+					<span class="share-icon">
+						<i class="fa fa-share-alt"> Share</i>
+					</span>
+					<a type="button" class="btn-floating" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.zoyit.info%2F&amp;src=sdkpreparse" onclick="window.open(this.href, 'share-facebook','left=50,top=50,width=600,height=320,toolbar=0');return false;">
+						<i class="fa fa-facebook" style="font-size: 20px; color: #4267b2"></i>
+					</a>
+					<!-- Twitter -->
+					<a type="button" class="btn-floating btn-tw" href="https://twitter.com/share?text=C%E1%BA%A7u+V%C3%A0ng+l%E1%BB%8Dt+t%E1%BB%91p+nh%E1%BB%AFng+c%C3%A2y+c%E1%BA%A7u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+th%E1%BA%BF+gi%E1%BB%9Bi&amp;url=https%3A%2F%2Fwww.zoyit.info" onclick="window.open(this.href, 'share-Twitter','left=50,top=50,width=600,height=320,toolbar=0');return false;">
+						<i class="fab fa-twitter" style="font-size: 20px; color: #1da1f2"></i>
+					</a>
+					<!-- Google +-->
+					<a type="button" class="" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.zoyit.info" onclick="window.open(this.href, 'share-Google','left=50,top=50,width=600,height=320,toolbar=0');return false;">
+						<i class="fab fa-google-plus-g" style="font-size: 20px; color: #34a853"></i>
+					</a>
+					<!-- pinterest +-->
+					<a type="button" class="" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.zoyit.info&amp;media=https://danangfantasticity.com/wp-content/uploads/2020/04/cau-vang-lot-top-nhung-cay-cau-dep-nhat-the-gioi.jpg&amp;description=C%E1%BA%A7u+V%C3%A0ng+l%E1%BB%8Dt+t%E1%BB%91p+nh%E1%BB%AFng+c%C3%A2y+c%E1%BA%A7u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+th%E1%BA%BF+gi%E1%BB%9Bi" onclick="window.open(this.href, 'share-pinterest','left=50,top=50,width=600,height=320,toolbar=0');return false;">
+						<i class="fa fa-pinterest" style="font-size: 20px; color: #E11818"></i>
+					</a>
+					<!-- Mail +-->
+					<a type="button" class="" href="mailto:?subject=C%E1%BA%A7u+V%C3%A0ng+l%E1%BB%8Dt+t%E1%BB%91p+nh%E1%BB%AFng+c%C3%A2y+c%E1%BA%A7u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+th%E1%BA%BF+gi%E1%BB%9Bi&amp;body=https%3A%2F%2Fwww.zoyit.info" onclick="window.open(this.href, 'share-Google','left=50,top=50,width=600,height=320,toolbar=0'); return false;">
+						<i class="fa fa-envelope-open" style="font-size: 20px; color: #6292FF"></i>
+					</a>
+					<!-- print +-->
+					<a type="button" class="" href="#" onclick="window.print();return false;">
+						<i class="fa fa-print" style="font-size: 20px; color: #000000"></i>
+					</a>
+				</div>
+				<p class="h3">Ngành Du Lịch Đà Nẵng Tăng Cường Công Tác Phòng Chống Dịch Covid-19</p>
+				<p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
+				<div class="entry-content clearfix">
+					<p>Trước tình hình diễn biến phức tạp của dịch Covid-19, đặc biệt là trong thời gian cao điểm từ 28/3/2020 đến ngày 19/4/2020, UBND thành phố Đà Nẵng đã quyết liệt trong việc chỉ đạo và triển khai các biện pháp phòng chống dịch Covid-19. Trong đó, ngành du lịch Đà Nẵng, mà vai trò quan trọng then chốt là Sở Du lịch đã và đang tăng cường nhiều giải pháp căn cơ để truyền thông, cung cấp thông tin và đẩy mạnh việc phòng chống dịch đối với các dịch vụ du lịch, lưu trú, ẩm thực và các lĩnh vực khác có liên quan.</p>
+					<p style="text-align: justify;">Cụ thể, thực hiện theo chỉ đạo của Thủ tướng Chính phủ tại Chỉ thị số 15/CT-TTg ngày 27/3/2020, UBND thành phố Đà Nẵng đã ban hành các văn bản 1940/UBND-VHXH, 1951/UBND-VHXH ngày 27/3/2020 và văn bản số 2012/UBND-VHXH ngày 30/3/2020 tăng cường và triển khai quyết liệt, triệt để các biện pháp phòng, chống dịch Covid- 19 trên toàn địa bàn thành phố, trong đó lĩnh vực du lịch được đặc biệt quan tâm và chú trọng.</p>
+					<img src="../img/baiviet/ung-pho-kip-thoi-voi-dich-benh-covid-19-cua-nganh-du-lich-da-nang-01.jpg">
+					<figcaption class="figure-caption text-center"></figcaption><br>
+					<p style="text-align: justify;">Theo đó, từ ngày 28/3/2020 đến hết ngày 15/4/2020, toàn thành phố sẽ tạm dừng tất cả các hoạt động liên quan đến tắm biển như kinh doanh dịch vụ tại các bãi tắm biển công cộng, khu nhà tắm nước ngọt, bãi trông giữ xe ven biển, tắm biển …và tạm dừng đón khách tham quan tại bán đảo Sơn Trà; tạm dừng đón khách lưu trú du lịch; tạm dừng các hoạt động như: rạp chiếu phim, bảo tàng, nhà hát, phòng trà, các khu di tích, các cơ sở tập luyện, thi đấu thể dục, thể thao trong nhà và bể bơi ngoài trời; tạm dừng hoạt động các cơ sở, loại hình kinh doanh dịch vụ: thẩm mỹ, chăm sóc sắc đẹp (kể cả dịch vụ cắt tóc), spa, vật lý trị liệu, nhà hàng (cơ sở, dịch vụ ăn uống), quán cà phê, hàng quán giải khát…(chỉ được phép bán hàng qua mạng, bán hàng mang đi và tuyệt đối không phục vụ tại cơ sở kinh doanh); tạm dừng các hoạt động vui chơi, giải trí trong khách sạn, khu nghỉ dưỡng và các điểm kinh doanh casino, trò chơi điện tử có thưởng cho người nước ngoài.</p>
+					<img src="../img/baiviet/da-nang-tam-dung-cac-hoat-dong-bien-vi-dich-covid-19-02.jpg">
+					<figcaption class="figure-caption text-center">Toàn thành phố sẽ tạm dừng tất cả các hoạt động liên quan đến tắm biển như kinh doanh dịch vụ tại các bãi tắm biển công cộng, khu nhà tắm nước ngọt, bãi trông giữ xe ven biển, tắm biển …</figcaption><br>
+					<p style="text-align: justify;">Đồng thời, Sở Du lịch cũng đã tăng cường khuyến cáo và trực tiếp hướng dẫn chủ các cơ sở kinh doanh lưu trú trên địa bàn thành phố thực hiện nghiêm túc việc theo dõi, thông tin tình hình du khách lưu trú như: đo thân nhiệt cho khách, nhắc khách hạn chế ra khỏi cơ sở lưu trú, phục vụ ăn uống tại phòng, giữ khoảng cách 2m khi tiếp xúc, đảm bảo vệ sinh sạch sẽ hàng ngày các khu vực dịch vụ trong ks và các trang thiết bị, dụng cụ phục vụ khách; thường xuyên kiểm tra, xử lý tại các điểm du lịch tự phát, các bãi biển trên địa bàn thành phố; Trung tâm Hỗ trợ Du khách Đà Nẵng cũng đã tích cực chủ động triển khai cung cấp thông tin, hướng dẫn du khách, phát khẩu trang và nước sát khuẩn miễn phí, hỗ trợ và cập nhật thông tin du khách trong thời gian dịch bệnh, đặc biệt là những du khách được cách ly tại các khách sạn, bệnh viện trên địa bàn thành phố.</p>
+					<img src="../img/baiviet/nganh-du-lich-da-nang-tang-cuong-cong-tac-phong-chong-dich-covid-19.jpg">
+					<figcaption class="figure-caption text-center"></figcaption><br>
+					<p style="text-align: justify;">Bên cạnh đó, Đoàn Thanh niên Sở Du lịch thành phố Đà Nẵng đã triển khai phối hợp cùng với Ban Quản lý bán đảo Sơn Trà và các bãi biển du lịch, UBND quận Sơn Trà tuyên truyền, nhắc nhở người dân và du khách đeo khẩu trang nơi công cộng, không tắm biển và tụ tập đông người theo chỉ đạo của Thủ tướng Chính phủ, Thành ủy Đà Nẵng và UBND thành phố.</p>
+
+					<p style="text-align: justify;">Để công tác phòng chống dịch Covid-19 được triển khai hiệu quả, ngành du lịch rất cần sự ủng hộ, chung tay, đồng hành và ý thức, trách nhiệm của người dân và du khách trên địa bàn thành phố.</p>
+				</div>
+				<div class="share">
+					<span class="share-icon">
+						<i class="fa fa-share-alt"> Share</i>
+					</span>
+					<a type="button" class="btn-floating" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.zoyit.info%2F&amp;src=sdkpreparse" onclick="window.open(this.href, 'share-facebook','left=50,top=50,width=600,height=320,toolbar=0'); 
+					return false;">
+					<i class="fa fa-facebook" style="font-size: 20px; color: #4267b2"></i>
+				</a>
+				<!-- Twitter -->
+				<a type="button" class="btn-floating btn-tw" href="https://twitter.com/share?text=C%E1%BA%A7u+V%C3%A0ng+l%E1%BB%8Dt+t%E1%BB%91p+nh%E1%BB%AFng+c%C3%A2y+c%E1%BA%A7u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+th%E1%BA%BF+gi%E1%BB%9Bi&amp;url=https%3A%2F%2Fwww.zoyit.info" onclick="window.open(this.href, 'share-Twitter','left=50,top=50,width=600,height=320,toolbar=0'); 
+				return false;">
+				<i class="fab fa-twitter" style="font-size: 20px; color: #1da1f2"></i>
+			</a>
+			<!-- Google +-->
+			<a type="button" class="" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.zoyit.info" onclick="window.open(this.href, 'share-Google','left=50,top=50,width=600,height=320,toolbar=0'); 
+			return false;">
+			<i class="fab fa-google-plus-g" style="font-size: 20px; color: #34a853"></i>
+		</a>
+		<!-- pinterest +-->
+		<a type="button" class="" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.zoyit.info&amp;media=https://danangfantasticity.com/wp-content/uploads/2020/04/cau-vang-lot-top-nhung-cay-cau-dep-nhat-the-gioi.jpg&amp;description=C%E1%BA%A7u+V%C3%A0ng+l%E1%BB%8Dt+t%E1%BB%91p+nh%E1%BB%AFng+c%C3%A2y+c%E1%BA%A7u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+th%E1%BA%BF+gi%E1%BB%9Bi" onclick="window.open(this.href, 'share-pinterest','left=50,top=50,width=600,height=320,toolbar=0');return false;">
+			<i class="fa fa-pinterest" style="font-size: 20px; color: #E11818"></i>
+		</a>
+		<!-- Mail +-->
+		<a type="button" class="" href="mailto:?subject=C%E1%BA%A7u+V%C3%A0ng+l%E1%BB%8Dt+t%E1%BB%91p+nh%E1%BB%AFng+c%C3%A2y+c%E1%BA%A7u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+th%E1%BA%BF+gi%E1%BB%9Bi&amp;body=https%3A%2F%2Fwww.zoyit.info" onclick="window.open(this.href, 'share-Google','left=50,top=50,width=600,height=320,toolbar=0');return false;">
+			<i class="fa fa-envelope-open" style="font-size: 20px; color: #6292FF"></i>
+		</a>
+		<!-- print +-->
+		<a type="button" class="" href="#" onclick="window.print();return false;">
+			<i class="fa fa-print" style="font-size: 20px; color: #000000"></i>
+		</a>
+	</div>
+	<div class="alert alert-secondary mt-3" role="alert">
+		<p>Theo dõi tin tức Danang Fantasticity trên các mạng xã hội.</p>
+		<p>
+			<b>
+				<a style="color:#ED1C24" href="/tin-tuc">Tin tức</a> - <a style="color:#ED1C24" href="/su-kien-noi-bat">Sự kiện</a> - <a style="color:#ED1C24" href="/khuyen-mai">Khuyến mãi</a>
+			</b>
+		</p>
+		<p>Liên hệ cung cấp thông tin và gửi tin bài cộng tác cho Danang Fantasticity.</p>
+		<p>Email: <a href="mailto: vvqua19it4@sict.udn.com"> vvqua19it4@sict.udn.com</a></p>
+		<p>Liên hệ quảng cáo: <a href="tel:0977994832">0977.994.832</a> (Chỉ dành cho tư vấn quảng cáo)</p>
+	</div>
+	<h3 class="title_1">BÀI VIẾT MỚI CẬP NHẬT
+	</h3>
+	<div class="alert alert-success" role="alert">
+		<ul><li><h4><a href="https://danangfantasticity.com/tin-tuc/sun-world-ba-na-hills-giam-60-gia-ve-cho-du-khach-mien-trung-tay-nguyen.html" title="Sun World Ba Na Hills giám 60% giá vé cho du khách miền Trung, Tây Nguyên">Sun World Ba Na Hills giám 60% giá vé cho du khách miền Trung, Tây Nguyên</a></h4></li><li><h4><a href="https://danangfantasticity.com/covid-19/cap-nhat-tinh-hinh-phong-chong-dich-benh-covid-19-tai-thanh-pho-da-nang-luc-13h30-ngay-29-4.html" title="Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 13h30 ngày 29/4">Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 13h30 ngày 29/4</a></h4></li><li><h4><a href="https://danangfantasticity.com/tin-tuc/cho-phep-tat-ca-cac-tuyen-xe-buyt-tai-da-nang-hoat-dong-tro-lai-tu-01-05.html" title="Cho phép tất cả các tuyến xe buýt tại Đà Nẵng hoạt động trở lại từ 01/05">Cho phép tất cả các tuyến xe buýt tại Đà Nẵng hoạt động trở lại từ 01/05</a></h4></li><li><h4><a href="https://danangfantasticity.com/tin-tuc/mo-cua-ba-na-hills-tu-ngay-30-4-neu-khong-phat-sinh-ca-lay-thu-phat-trong-cong-dong.html" title="Mở cửa Bà Nà Hills từ ngày 30-4 nếu không phát sinh ca lây thứ phát trong cộng đồng">Mở cửa Bà Nà Hills từ ngày 30-4 nếu không phát sinh ca lây thứ phát trong cộng đồng</a></h4></li><li><h4><a href="https://danangfantasticity.com/khuyen-mai/vinwonders-tung-goi-uu-dai-khung-tu-26-4-den-02-5.html" title="VinWonders tung gói ưu đãi khủng từ 26/4 đến 02/5">VinWonders tung gói ưu đãi khủng từ 26/4 đến 02/5</a></h4></li><li><h4><a href="https://danangfantasticity.com/covid-19/cap-nhat-tinh-hinh-phong-chong-dich-benh-covid-19-tai-thanh-pho-da-nang-luc-08h00-ngay-27-4.html" title="Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 27/4">Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 27/4</a></h4></li><li><h4><a href="https://danangfantasticity.com/covid-19/cap-nhat-tinh-hinh-phong-chong-dich-benh-covid-19-tai-thanh-pho-da-nang-luc-08h00-ngay-25-4.html" title="Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 25/4">Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 25/4</a></h4></li><li><h4><a href="https://danangfantasticity.com/covid-19/cap-nhat-tinh-hinh-phong-chong-dich-benh-covid-19-tai-thanh-pho-da-nang-luc-08h00-ngay-23-4.html" title="Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 23/4">Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 23/4</a></h4></li><li><h4><a href="https://danangfantasticity.com/tin-tuc/da-nang-hoat-dong-nao-duoc-mo-cua-hoac-tiep-tuc-cam.html" title="Đà Nẵng: hoạt động nào được mở cửa hoặc tiếp tục cấm?">Đà Nẵng: hoạt động nào được mở cửa hoặc tiếp tục cấm?</a></h4></li><li><h4><a href="https://danangfantasticity.com/covid-19/cap-nhat-tinh-hinh-phong-chong-dich-benh-covid-19-tai-thanh-pho-da-nang-luc-08h00-ngay-22-4.html" title="Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 22/4">Cập nhật tình hình phòng chống dịch bệnh COVID-19 tại thành phố Đà Nẵng lúc 08h00 ngày 22/4</a></h4></li></ul>
+	</div>
+	<h2 class="title_2 mt-4">
+		<span>
+			TIN NỔI BẬT
+		</span>
+	</h2>
+	<div class="card-deck mt-2">
+		<div class="card">
+			<a href="nha-dao-nguoc-upside-world-da-nang.html">
+			<img src="../img/baiviet/nha-dao-nguoc-upside-world-da-nang-04.jpeg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Nhà Đảo Ngược Upside Down World Đà Nẵng
+				</h5></a>
+				<p class="card-text">Ngay bây giờ, giới trẻ Đà Nẵng và du khách đã không cần phải lặn lội đường xa đến với Sài Gòn hay Vũng Tàu để check – in Ngôi nhà đảo ngược nữa, bởi Nhà Đảo Ngược – Upside Down World Đà Nẵng đã chính thức mở cửa trình làng vào ngày 01.01.2018...</p>
+			</div>
+		</div>
+		<div class="card">
+			<a href="sun-world-danang-wonders-cong-vien-chau-a-asia-park.html">
+			<img src="../img/baiviet/lZLDahF1biiCHGHoBv6RhwHroWRCtuMu.jpeg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Sun World Danang Wonders
+				</h5></a>
+				<p class="card-text">Sun World Danang Wonders (Công viên Châu Á) Địa chỉ: Số 01 Phan Đăng Lưu, Quận Hải Châu, T.P Đà Nẵng Thời gian mở cửa: Thứ 2 đến Chủ nhật hàng tuần: 15:00 – 22:00 Tổng quan: Trải rộng trên diện tích 868.694 m2 bên bờ Tây sông…</p>
+			</div>
+		</div>
+		<div class="card">
+			<a href="dhc-marina-ben-du-thuyen-da-nang.html">
+			<img src="../img/baiviet/DHCMarina01.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">DHC Marina – Bến Du Thuyền Đà Nẵng
+				</h5></a>
+				<p class="card-text">Bến du thuyền DHC-Marina tự hào là bến du thuyền quốc tế đầu tiên được xây dựng tại thành phố Đà Nẵng. Khu vực bến đầu tiên mà DHC-Marina đầu tư có vị trí nằm bên bờ sông Hàn....</p>
+			</div>
+		</div>
+	</div>
+	<h2 class="title_2 mt-4">
+		<span>
+			BÌNH LUẬN
+		</span>
+	</h2>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0&appId=553253088944677&autoLogAppEvents=1"></script>
+	<div class="fb-comments" data-href="https://www.zoyit.info/" data-numposts="5" data-width="950"></div>
+</div>
+<div class="rightcontent">
+	<blockquote class="blockquote text-center mt-3">
+		<h4 class="card-title">Đối tác chính thức</h4>
+	</blockquote>
+	<hr width="70%">
+	<div class="card mt-2" id="cardright">
+		<img src="https://media.giphy.com/media/dxyVH3Ka2Ct0sN56iK/giphy.gif" alt="..." height="290px" id="doitac_1">
+		<img src="../img/doitac/Sunrise-Group-Asia-Logo.png" height="340px;" id="doitac_2" class="mt-3">
+	</div>
+	<blockquote class="blockquote text-center mt-5">
+		<h4 class="card-title ml-3">Facebook</h4>
+		<hr class="mt-3">
+		<div class="sidebar-facebook">
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzoythuthuat%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=553253088944677" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+		</blockquote>
+	</div>
+</div>
+<!--end content-->
+<!-- Footer -->
+<div class="footer clearfix">
+	<footer class="page-footer font-small mdb-color lighten-3 pt-4 footer-backgourd">
+
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+
+			<!-- Grid row -->
+			<div class="row">
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+					<!-- Content -->
+					<h5 class="font-weight-bold text-uppercase mb-4">VỀ CHÚNG TÔI</h5>
+					<p>Bản quyền thuộc về UBND TP. Đà Nẵng Sở Du lịch Đà Nẵng</p>
+					<p>Giấy phép: 696/GP-STTTT ngày 20/10/2015 của Sở Thông tin Truyền thông Đà Nẵng</p>
+					<p>Contact us: vvqua19it4@sict.udn.com</p>
+				</div>
+				<!-- Grid column -->
+
+
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<p>
+								<a href="../page/diem-du-lich.html">ĐIỂM DU LỊCH</a>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="../page/tin-tuc.html">TIN TỨC</a>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="../page/trai-nghiem.html">TRẢI NGHIỆM</a>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="../page/khach-san.html">KHÁCH SẠN</a>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="../page/lien-he.html">LIÊN HỆ</a>
+							</p>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Grid column -->
+
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+					<!-- Contact details -->
+					<h5 class="font-weight-bold text-uppercase mb-4">ĐỊA CHỈ</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<p>
+								<i class="fas fa-home mr-3"></i> Trung Tâm Xúc Tiến Du Lịch Đà Nẵng</p>
+							</li>
+							<li>
+								<p>
+									<i class="fas fa-envelope mr-3"></i> vvqua19it4@sict.udn.com</p>
+								</li>
+								<li>
+									<p>
+										<i class="fas fa-phone mr-3"></i> (84.236) 3.898.196</p>
+									</li>
+									<li>
+										<p>
+											<i class="fas fa-print mr-3"></i> (84.236) 3.812.029</p>
+										</li>
+									</ul>
+
+								</div>
+								<!-- Grid column -->
+
+								<hr class="clearfix w-100 d-md-none">
+
+								<!-- Grid column -->
+								<div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+									<!-- Social buttons -->
+									<h5 class="font-weight-bold text-uppercase mb-4">THEO DÕI</h5>
+
+									<!-- Facebook -->
+									<a type="button" class="btn-floating btn-fb">
+										<i class="fab fa-facebook-f" style="font-size: 30px; color: #4267b2"></i>
+									</a><br><br>
+									<!-- Twitter -->
+									<a type="button" class="btn-floating btn-tw">
+										<i class="fab fa-twitter" style="font-size: 30px; color: #1da1f2"></i>
+									</a><br><br>
+									<!-- Google +-->
+									<a type="button" class="">
+										<i class="fab fa-google-plus-g" style="font-size: 30px; color: #34a853"></i>
+									</a><br><br>
+
+								</div>
+								<!-- Grid column -->
+
+							</div>
+							<!-- Grid row -->
+
+						</div>
+						<!-- Footer Links -->
+
+						<!-- Copyright -->
+						<div class="footer-copyright text-center py-3">© 2020 Copyright:
+							<a href="https://www.facebook.com/Rin.Boss.Rin">  VÕ VĂN QUÁ(KENDZZ) | 19IT4</a>
+						</div>
+						<!-- Copyright -->
+					</footer>
+				</div>
+			</div>
+			<!--end Footer -->
+			<!--back to top-->
+			<a href="#" class="cd-top">Back To Top</a>
+		</body>
+		</html>

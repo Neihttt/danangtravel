@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> In Hóa Đơn</title>
+    <link rel="stylesheet" type="text/css" href="print.css">
+</head>
+
+<body onload="window.print();">
+    <div id="page" class="page">
+        <div class="header">
+            <div class="logo"><img style="width: 30%;" src="../../images/logo.png" /></div>
+            <div class="company">DANANG TRAVEL</div>
+        </div>
+        <br />
+        <div class="title">
+            HÓA ĐƠN THANH TOÁN
+            <br />
+            -------oOo-------
+        </div>
+        <br />
+        <br />
+        <table class="TableData">
+            <tr>
+                <th>Order #</th>
+                <th>Thời gian</th>
+                <th>Tour</th>
+                <th>Số người</th>
+                <th>Giá Tour</th>
+                <th>Thành Tiền</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2020/06/02</td>
+                <td>CHƯƠNG TRÌNH DU LỊCH KHÁM PHÁ CAO NGUYÊN MỘC CHÂU </td>
+                <td>3</td>
+                <td>9.900.000 VND </td>
+                <td>29.700‬.000VND</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="tong">Tổng cộng</td>
+                <td id="cotSo">
+                    29.700‬.000 VND
+                </td>
+            </tr>
+        </table>
+        <label id="cotSo"></label>
+        <div class="footer-left"> Đà Nẵng, ngày 14 tháng 6 năm 2020<br />
+            Khách hàng </div>
+        <div class="footer-right">Đà Nẵng, ngày 14 tháng 6 năm 2020<br />
+            Nhân viên </div>
+    </div>
+</body>
+
+</html>

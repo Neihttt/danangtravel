@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cẩm nang du lịch ĐÀ NẴNG</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/func.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/icon/logo-mobile2@.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <!-- Optional theme -->
+    <meta charset="utf-8">
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e32986497.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!--menu-->
+        <div class="logo_menu">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/icon/logo-mobile2@.png" class="navbar-brand" id="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="page/tin-tuc.html">TIN TỨC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="page/diem-du-lich.html">ĐIỂM DU LỊCH</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./page/trai-nghiem.html" id="navbarDropdown">
+                                    TRẢI NGHIỆM
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./page/khach-san.html" id="navbarDropdown">
+                                    KHÁCH SẠN
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./page/lien-he.html">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0" onsubmit="return check_search()">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Từ khóa..." aria-label="Search" id="search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--end menu-->
+        <!--content-->
+        <div class="container-fluid-frist clearfix">
+            <!--Slide-->
+            <div class="slide-frist">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/baiviet/SAO_6588.png" class="d-block w-100" alt="#">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>DA NANG</h5>
+                                <p>TOP 1 trong danh sách Trending Destinations in 2020 của Google</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/baiviet/da-nang-thanh-pho-cua-nhung-cay-cau-07.jpg" class="d-block w-100" alt="#">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>DA NANG</h5>
+                                <p>Thành phố Đà Nẵng về đêm</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/baiviet/cho-dem-helio-da-nang.jpg" class="d-block w-100" alt="#">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>DA NANG</h5>
+                                <p>Khu chợ đêm tại thành phố Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--end slide-->
+        <!--left content-->
+        <div class="container-fluid clearfix">
+            <div class="leftcontent">
+                <h2 class="title_1 mt-4">
+                    <span>
+                        SỰ KIỆN NỔI BẬT
+                    </span>
+                </h2>
+                <!--card su kien noi bat-->
+                <div class="card-columns">
+                    <div class="card mt-2">
+                        <a href="./baiviet/cau-vang-lot-top-cay-cau-dep-nhat-the-gioi.html">
+                            <img class="card-img-top" src="img/baiviet/cau-vang-da-nang-la-mot-trong-nhung-noi-dang-ghe-tham-nhat-nam-2018-theo-tap-chi-time-1024x576.jpg" alt="Cầu Vàng lọt tốp những cây cầu đẹp nhất thế giới" href="./baiviet/cau-vang-lot-top-cay-cau-dep-nhat-the-gioi.html">
+                            <div class="card-body">
+                                <h5 class="card-title">Cầu Vàng lọt tốp những cây cầu đẹp nhất thế giới</h5>
+                        </a>
+                        <p class="card-text">Mới đây trang Insider có bài viết về 28 cây cầu tuyệt đẹp trên khắp thế giới, trong đó Cầu Vàng Đà Nẵng của Việt Nam cũng vinh dự được xướng tên trong danh sách này.</p>
+                    </div>
+                </div>
+                <div class="card p-3">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <a href="./baiviet/thanh-lap-quy-xuc-tien-phat-trien-du-lich-da-nang.html">
+                            <p class="card-title">Thành Lập Quỹ Xúc Tiến Phát Triển Du Lịch Đà Nẵng</p>
+                        </a>
+                    </blockquote>
+                </div>
+                <div class="card mt-2">
+                    <a href="./baiviet/le-hoi-tuyet-voi-da-nang-2020-du-kien-dien-ra-vao-thang-6-2020.html">
+                        <img class="card-img-top" src="img/baiviet/chuong-trinh-le-hoi-tuyet-voi-da-nang-2020-du-kien-dien-ra-vao-thang-6-2020.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lễ Hội “Tuyệt Vời Đà Nẵng 2020” Dự Kiến Diễn Ra Vào Tháng 6/2020</h5>
+                    </a>
+                    <p class="card-text">UBND thành phố vừa có văn bản số 2372/UBND-SDL về việc tổ chức chương trình lễ hội “Tuyệt vời Đà Nẵng 2020” dự kiến diễn ra vào tháng 6 tới.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                    <p>Ưu Đãi Vé Hồ Bơi Tại Khách Sạn Diamond Sea
+                    </p>
+                </blockquote>
+            </div>
+            <a href="./baiviet/nganh-du-lich-da-nang-tang-cuong-cong-tac-phong-chong-dich-covid-19.html">
+                <div class="card mt-2">
+                    <img class="card-img" src="img/baiviet/ung-pho-kip-thoi-voi-dich-benh-covid-19-cua-nganh-du-lich-da-nang-01.jpg" alt="Card image cap">
+                </div>
+                <div class="card p-3 text-right">
+                    <h5 class="card-title">Ngành Du Lịch Đà Nẵng Tăng Cường Công Tác Phòng Chống Dịch Covid-19</h5>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <a href="./baiviet/thanh-lap-quy-xuc-tien-phat-trien-du-lich-da-nang.html">
+                    <h5 class="card-title">Đà Nẵng Lúc 5 Giờ Sáng</h5>
+                </a>
+                <p class="card-text">Là người Đà Nẵng, hẳn bạn đã có ít nhất vài lần được nhìn ngắm cái đẹp của thành phố buổi sớm mai, buổi 5 giờ sáng...</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+    <!--end card su kien noi bat-->
+    <!--slide khuyen mai-->
+    <h2 class="title_2 mt-2">
+        <span>
+            KHUYẾN MÃI
+        </span>
+    </h2>
+    <div class="demo">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="news-slider" class="owl-carousel">
+                    <div class="post-slide">
+                        <div class="pic">
+                            <img src="img/khuyenmai/four-points-by-sheraton-danang-flash-sale-mua-1-tang-1.jpg" alt="" />
+                            <ul class="post-category">
+                                <li><a href="">KHUYẾN MÃI</a></li>
+                            </ul>
+                        </div>
+                        <p class="post-description">
+                            Four Points By Sheraton Danang – Flash Sale Mua 1 Tặng 1
+                        </p>
+                    </div>
+                    <div class="post-slide">
+                        <div class="pic">
+                            <img src="img/khuyenmai/he-thanh-thoi-nghi-ngoi-tron-ven-voi-uu-dai-dine-with-us-02.jpg" alt="" />
+                            <ul class="post-category">
+                                <li><a href="">KHUYẾN MÃI</a></li>
+                            </ul>
+                        </div>
+                        <p class="post-description">
+                            Hè Thảnh Thơi, Nghỉ Ngơi Trọn Vẹn Với Ưu Đãi “Dine With Us”
+                        </p>
+                    </div>
+                    <div class="post-slide">
+                        <div class="pic">
+                            <img src="img/khuyenmai/navy-hotel-da-nang-tri-an-khach-hang-da-nang.jpg" alt="" />
+                            <ul class="post-category">
+                                <li><a href="">KHUYẾN MÃI</a></li>
+                            </ul>
+                        </div>
+                        <p class="post-description">
+                            Navy Hotel Đà Nẵng: Tri Ân Khách Hàng Đà Nẵng
+                        </p>
+                    </div>
+                    <div class="post-slide">
+                        <div class="pic">
+                            <img src="img/khuyenmai/uu-dai-ve-ho-boi-tai-khach-san-diamond-sea-02.jpg" alt="" />
+                            <ul class="post-category">
+                                <li><a href="">KHUYẾN MÃI</a></li>
+                            </ul>
+                        </div>
+                        <p class="post-description">
+                            Ưu Đãi Vé Hồ Bơi Tại Khách Sạn Diamond Sea
+                        </p>
+                    </div>
+                    <div class="post-slide">
+                        <div class="pic">
+                            <img src="img/khuyenmai/sheraton-grand-da-nang-chao-don-cac-nha-to-chuc-su-kien-den-voi-da-nang-bang-uu-dai-noi-gap-go-thanh-cong-04.jpg" alt="" />
+                            <ul class="post-category">
+                                <li><a href="">KHUYẾN MÃI</a></li>
+                            </ul>
+                        </div>
+                        <p class="post-description">
+                            Sheraton Grand Đà Nẵng Chào Đón Các Nhà Tổ Chức Sự Kiện Đến Với Đà Nẵng Bằng Ưu Đãi “Nơi Gặp Gỡ Thành Công”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end slide khuyen mai-->
+    <!--card 2 colums news-->
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 class="title_2">
+                <span>
+                    TIN TỨC
+                </span>
+            </h2>
+            <div class="card">
+                <div class="card-body">
+                    <a href="baiviet/nganh-du-lich-da-nang-tang-cuong-cong-tac-phong-chong-dich-covid-19.html">
+                        <img src="img/baiviet/ung-pho-kip-thoi-voi-dich-benh-covid-19-cua-nganh-du-lich-da-nang-01.jpg" class="d-block w-100">
+                        <h5 class="card-title mt-2">Ngành Du Lịch Đà Nẵng Tăng Cường Công Tác Phòng Chống Dịch Covid-19</h5>
+                    </a>
+                    <p class="card-text">Trước tình hình diễn biến phức tạp của dịch Covid-19, đặc biệt là trong thời gian cao điểm từ 28/3/2020 đến ngày 19/4/2020..</p>
+                    <a href="#" class="btn btn-primary" style="color: #FFFFFF;">XEM THÊM</a>
+                </div>
+                <div class="card ml-3" style="max-width: 400px; max-height: 77px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/baiviet/thu-tuong-chinh-phu-phe-duyet-nhiem-vu-lap-quy-hoach-bao-quan-tu-bo-phuc-hoi-danh-lam-thang-canh-quoc-gia-dac-biet-ngu-hanh-son.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="baiviet/thu-tuong-chinh-phu-phe-duyet-nhiem-vu-lap-quy-hoach-bao-quan-tu-bo-phuc-hoi-danh-lam-thang-canh-quoc-gia-dac-biet-ngu-hanh-son.html">
+                                    <p class="title-news-card font-weight-bold">Thủ Tướng Chính Phủ Phê duyệt Nhiệm Vụ..</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-3 mt-2" style="max-width: 400px; max-height: 77px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/baiviet/tu-16-4-bamboo-airways-vietjet-vietnam-airlines-dong-loat-bay-tro-lai.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="baiviet/bamboo-airways-vietjet-air-vietnam-airlines-dong-loat-bay-noi-dia-tro-lai-tu-16-4.html">
+                                    <p class="title-news-card font-weight-bold">Bamboo Airways, Vietnam Airlines Đồng Loạt Bay Nội Địa Trở Lại</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-3 mt-2" style="max-width: 400px; max-height: 77px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/baiviet/cuoc-thi-co-vy-den-roi-minh-o-nha-thoi.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="baiviet/cuoc-thi-co-vy-den-roi-minh-o-nha-thoi.html">
+                                    <p class="title-news-card font-weight-bold">Cuộc Thi “Cô Vy Đến Rồi, Mình Ở Nhà Thôi”
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h2 class="title_2">
+                <span>
+                    TRẢI NGHIỆM
+                </span>
+            </h2>
+            <div class="card">
+                <div class="card-body">
+                    <a href="baiviet/le-hoi-tuyet-voi-da-nang-2020-du-kien-dien-ra-vao-thang-6-2020.html">
+                        <img src="img/baiviet/chuong-trinh-le-hoi-tuyet-voi-da-nang-2020-du-kien-dien-ra-vao-thang-6-2020.jpg" class="d-block w-100">
+                        <h5 class="card-title mt-2">Lễ Hội “Tuyệt Vời Đà Nẵng 2020” Dự Kiến Diễn Ra Vào Tháng 6/2020</h5>
+                    </a>
+                    <p class="card-text">UBND thành phố vừa có văn bản số 2372/UBND-SDL về việc tổ chức chương trình lễ hội “Tuyệt vời Đà Nẵng 2020” dự kiến diễn ra vào tháng 6 tới.</p>
+                    <a href="#" class="btn btn-primary" style="color: #FFFFFF;">XEM THÊM</a>
+                </div>
+                <div class="card ml-3" style="max-width: 400px; max-height: 77px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/baiviet/da-nang-luc-5-gio-sang-01.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="baiviet/da-nang-luc-5-gio-sang.html">
+                                    <p class="title-news-card font-weight-bold">Đà Nẵng Lúc 5 Giờ Sáng</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-3 mt-2" style="max-width: 400px; max-height: 77px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/baiviet/see-you-in-da-nang.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="baiviet/see-you-in-da-nang.html">
+                                    <p class="title-news-card font-weight-bold">See You In Đà Nẵng</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-3 mt-2" style="max-width: 400px; max-height: 77px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/baiviet/hoi-an-cest-lhistoire-de-la-vie-01-2048x1152.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="baiviet/hoi-an-cest-lhistoire-de-la-vie.html">
+                                    <p class="title-news-card font-weight-bold">Hội An – C’est L’histoire De La Vie</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end card 2 colums news-->
+    <!--slide hotel-->
+    <h2 class="title_2 mt-2">
+        <span>
+            KHÁCH SẠN
+        </span>
+    </h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(img/khachsan/danang-golden-bay-01-le-van-duyet-danang-fantasticity-com-03.jpg); background-position: 50% 70%;">
+                <h1>DANANG GOLDEN BAY</h1>
+                <p>✓ Nơi tận hưởng cuộc sống tuyệt vời<br>
+                    ✓ 5 SAO
+                </p>
+                <button onclick="openInNewTab('https://www.booking.com/hotel/vn/danang-golden-bay.vi.html');">ĐẶT PHÒNG</button>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/khachsan/dem-hoi-ruou-rhum-caribbean-le-hoi-am-nhac-da-nang-2019-tai-novotel-da-nang-01.jpg); background-position: 50% 70%;">
+                <h1>Novotel Danang Premier Han River</h1>
+                <p>✓ Nơi tận hưởng cuộc sống tuyệt vời<br>
+                    ✓ 5 SAO
+                </p>
+                <button onclick="openInNewTab('https://www.booking.com/hotel/vn/novotel-danang-premier-han-river.vi.html');">ĐẶT PHÒNG</button>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/khachsan/khach-san-hilton-danang-fantasticity-1-Copy.jpg); background-position: 50% 50%;">
+                <h1>HILTON DA NANG</h1>
+                <p>✓ Nơi tận hưởng cuộc sống tuyệt vời<br>
+                    ✓ 5 SAO
+                </p>
+                <button onclick="openInNewTab('https://www.booking.com/hotel/vn/hilton-da-nang.vi.html);">ĐẶT PHÒNG</button>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/khachsan/232148983.jpg); background-position: 50% 70%;">
+                <h1>Four Points by Sheraton Danang
+                </h1>
+                <p>✓ Nơi tận hưởng cuộc sống tuyệt vời<br>
+                    ✓ 5 SAO
+                </p>
+                <button onclick="openInNewTab('https://www.booking.com/hotel/vn/four-points-by-sheraton-danang.vi.html');">ĐẶT PHÒNG</button>
+            </div>
+        </div>
+    </div>
+    <!--end slide hotel-->
+    <!--card diem du lich -->
+    <h2 class="title_2 mt-4">
+        <span>
+            ĐIỂM DU LỊCH
+        </span>
+    </h2>
+    <div class="card-deck mt-2">
+        <div class="card">
+            <a href="baiviet/nha-dao-nguoc-upside-world-da-nang.html">
+                <img src="img/baiviet/nha-dao-nguoc-upside-world-da-nang-04.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nhà Đảo Ngược Upside Down World Đà Nẵng
+                    </h5>
+            </a>
+            <p class="card-text">Ngay bây giờ, giới trẻ Đà Nẵng và du khách đã không cần phải lặn lội đường xa đến với Sài Gòn hay Vũng Tàu để check – in Ngôi nhà đảo ngược nữa, bởi Nhà Đảo Ngược – Upside Down World Đà Nẵng đã chính thức mở cửa trình làng vào ngày 01.01.2018...</p>
+        </div>
+    </div>
+    <div class="card">
+        <a href="baiviet/sun-world-danang-wonders-cong-vien-chau-a-asia-park.html">
+            <img src="img/baiviet/lZLDahF1biiCHGHoBv6RhwHroWRCtuMu.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Sun World Danang Wonders
+                </h5>
+        </a>
+        <p class="card-text">Sun World Danang Wonders (Công viên Châu Á) Địa chỉ: Số 01 Phan Đăng Lưu, Quận Hải Châu, T.P Đà Nẵng Thời gian mở cửa: Thứ 2 đến Chủ nhật hàng tuần: 15:00 – 22:00 Tổng quan: Trải rộng trên diện tích 868.694 m2 bên bờ Tây sông…</p>
+    </div>
+    </div>
+    <div class="card">
+        <a href="baiviet/dhc-marina-ben-du-thuyen-da-nang.html">
+            <img src="img/baiviet/DHCMarina01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">DHC Marina – Bến Du Thuyền Đà Nẵng
+                </h5>
+        </a>
+        <p class="card-text">Bến du thuyền DHC-Marina tự hào là bến du thuyền quốc tế đầu tiên được xây dựng tại thành phố Đà Nẵng. Khu vực bến đầu tiên mà DHC-Marina đầu tư có vị trí nằm bên bờ sông Hàn....</p>
+    </div>
+    </div>
+    </div>
+    <div class="card-deck mt-5">
+        <div class="card">
+            <a href="baiviet/bao-tang-my-thuat-da-nang.html">
+                <img src="img/baiviet/tong-quan-bao-tang-my-thuat-da-nang-78-le-duan-danang-fantasticity-com.jpg" class="card-img-top" alt="..." width="10">
+                <div class="card-body">
+                    <h5 class="card-title">Bảo tàng Mỹ thuật Đà Nẵng</h5>
+            </a>
+            <p class="card-text">Bảo tàng Mỹ thuật Đà Nẵng Bảo tàng Mỹ thuật Đà Nẵng được thành lập ngày 29/7/2014, có chức năng bảo tồn, khai thác và phát huy giá trị di sản mỹ thuật của Đà Nẵng và khu vực. Tọa lạc tại số 78 Lê Duẩn, phường Thạch Thang, quận Hải Châu,…</p>
+        </div>
+    </div>
+    <div class="card">
+        <a href="baiviet/cau-nguyen-van-troi.html">
+            <img src="img/baiviet/cau-nguyen-van-troi1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cầu Nguyễn Văn Trỗi</h5>
+        </a>
+        <p class="card-text">Cầu Nguyễn Văn Trỗi có tuổi thọ lâu đời nhất, cầu gồm 14 nhịp giàn thép Poni dài hơn 500 m, khổ cầu 10,5 m, không có lề dành cho người đi bộ từng được sửa chữa năm 1978 và 1996. Hiện, cây cầu này được giữ lại như một kỷ vật của Đà Nẵng để phục ....</p>
+    </div>
+    </div>
+    <div class="card">
+        <a href="baiviet/chua-linh-ung-bai-but-da-nang.html">
+            <img src="img/baiviet/chua-linh-ung-bai-but-da-nang-010.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chùa Linh Ứng – Bãi Bụt – Đà Nẵng
+                </h5>
+        </a>
+        <p class="card-text">Chùa LINH ỨNG tọa lạc tại khu vực Bãi Bụt, bán đảo Sơn Trà, nằm cách trung tâm thành phố Đà Nẵng 10km về hướng Đông Bắc, do cố Hòa thượng Thích Thiện Nguyên khai sơn....</p>
+    </div>
+    </div>
+    </div>
+    <!--end card ddl-->
+    </div>
+    <!--end left content-->
+    <!--right content-->
+    <div class="rightcontent">
+        <blockquote class="blockquote text-center mt-3">
+            <h4 class="card-title">Đối tác chính thức</h4>
+        </blockquote>
+        <hr width="70%">
+        <div class="card mt-2" id="cardright">
+            <img src="https://media.giphy.com/media/dxyVH3Ka2Ct0sN56iK/giphy.gif" alt="..." width="105%" id="doitac_1">
+            <img src="img/doitac/Sunrise-Group-Asia-Logo.png" width="105%" id="doitac_2" class="mt-3">
+        </div>
+        <blockquote class="blockquote text-center mt-5">
+            <h4 class="card-title ml-3">Facebook</h4>
+            <hr class="mt-3">
+            <div class="sidebar-facebook">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzoythuthuat%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=553253088944677" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </blockquote>
+        
+    </div>
+    </div>
+    <!--end right content-->
+    <!--end content-->
+    </div>
+    <!--end content-->
+    <!-- Footer -->
+    <div class="footer mt-4">
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4 footer-backgourd">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+                        <!-- Content -->
+                        <h5 class="font-weight-bold text-uppercase mb-4">VỀ CHÚNG TÔI</h5>
+                        <p>Bản quyền thuộc về UBND TP. Đà Nẵng Sở Du lịch Đà Nẵng</p>
+                        <p>Giấy phép: 696/GP-STTTT ngày 20/10/2015 của Sở Thông tin Truyền thông Đà Nẵng</p>
+                        <p>Contact us: vvqua19it4@sict.udn.com</p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>
+                                    <a href="./page/diem-du-lich.html">ĐIỂM DU LỊCH</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="./page/tin-tuc.html">TIN TỨC</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="./page/trai-nghiem.html">TRẢI NGHIỆM</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="./page/khach-san.html">KHÁCH SẠN</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="./page/lien-he.html">LIÊN HỆ</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+                        <!-- Contact details -->
+                        <h5 class="font-weight-bold text-uppercase mb-4">ĐỊA CHỈ</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>
+                                    <i class="fas fa-home mr-3"></i> Trung Tâm Xúc Tiến Du Lịch Đà Nẵng</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fas fa-envelope mr-3"></i> vvqua19it4@sict.udn.com</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fas fa-phone mr-3"></i> (84.236) 3.898.196</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fas fa-print mr-3"></i> (84.236) 3.812.029</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+                        <!-- Social buttons -->
+                        <h5 class="font-weight-bold text-uppercase mb-4">THEO DÕI</h5>
+                        <!-- Facebook -->
+                        <a type="button" class="btn-floating btn-fb">
+                            <i class="fab fa-facebook-f" style="font-size: 30px; color: #4267b2"></i>
+                        </a><br><br>
+                        <!-- Twitter -->
+                        <a type="button" class="btn-floating btn-tw">
+                            <i class="fab fa-twitter" style="font-size: 30px; color: #1da1f2"></i>
+                        </a><br><br>
+                        <!-- Google +-->
+                        <a type="button" class="">
+                            <i class="fab fa-google-plus-g" style="font-size: 30px; color: #34a853"></i>
+                        </a><br><br>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://www.facebook.com/Rin.Boss.Rin"> VÕ VĂN QUÁ(KENDZZ) | 19IT4</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <!-- Footer -->
+    <!--back to top-->
+    <a href="#" class="cd-top">Back To Top</a>
+</body>
+
+</html>

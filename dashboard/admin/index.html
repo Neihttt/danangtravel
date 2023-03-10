@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard - Admin | DANANG TRAVEL</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors\mdi\css\materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors\simple-line-icons\css\simple-line-icons.css">
+    <link rel="stylesheet" href="vendors\flag-icon-css\css\flag-icon.min.css">
+    <link rel="stylesheet" href="vendors\css\vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="vendors\font-awesome\css\font-awesome.min.css">
+    <link rel="stylesheet" href="vendors\jquery-bar-rating\fontawesome-stars.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css\style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images\logo.png">
+    <script src="https://kit.fontawesome.com/3e32986497.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html"><img src="images\logo.png" alt="logo"></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images\logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown d-none d-lg-flex">
+                        <a class="nav-link dropdown-toggle nav-btn" id="actionDropdown" href="#" data-toggle="dropdown">
+                            <span class="btn">+ Quản Lý Tài Khoản</span>
+                        </a>
+                        <div class="dropdown-menu navbar-dropdown dropdown-left" aria-labelledby="actionDropdown">
+                            <a class="dropdown-item" href="./pages/samples/profile.html">
+                                <i class="icon-user text-primary"></i>
+                                Thông Tin
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./pages/samples/profile.html">
+                                <i class="icon-user-following text-warning"></i>
+                                Đổi Mật Khẩu
+                            </a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item dropdown d-none d-lg-flex">
+                        <a class="nav-link dropdown-toggle" id="languageDropdown" href="#" data-toggle="dropdown">
+                            <i class="flag-icon flag-icon-vn"></i>
+                            Việt Nam
+                        </a>
+                        <div class="dropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item font-weight-medium" href="#">
+                                <i class="flag-icon flag-icon-gb"></i>
+                                English
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                            <i class="icon-bell mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                            <a class="dropdown-item">
+                                <p class="mb-0 font-weight-normal float-left">Bạn nhận được 4 thông báo mới
+                                </p>
+                                <span class="badge badge-pill badge-warning float-right">Xem tất cả</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-success">
+                                        <i class="icon-info mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-medium">Application Error</h6>
+                                    <p class="font-weight-light small-text">
+                                        Just now
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-warning">
+                                        <i class="icon-speech mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-medium">Settings</h6>
+                                    <p class="font-weight-light small-text">
+                                        Private message
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-info">
+                                        <i class="icon-envelope mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-medium">New user registration</h6>
+                                    <p class="font-weight-light small-text">
+                                        2 days ago
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-envelope mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                            <div class="dropdown-item">
+                                <p class="mb-0 font-weight-normal float-left">Bạn vừa nhận được 1 tin nhắn mới
+                                </p>
+                                <span class="badge badge-info badge-pill float-right">Xem tất cả</span>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="images\faces\101087561_244942329931236_4761414423816437760_n.jpg" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-medium">KenDzz
+                                        <span class="float-right font-weight-light small-text">1 phút trước</span>
+                                    </h6>
+                                    <p class="font-weight-light small-text">
+                                        Chào mừng bạn đến với DANANG TRAVEL
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-settings d-none d-lg-block">
+                        <a class="nav-link" href="#">
+                            <i class="icon-grid"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="row row-offcanvas row-offcanvas-right">
+                <!-- partial:partials/_settings-panel.html -->
+                <div id="right-sidebar" class="settings-panel">
+                    <i class="settings-close mdi mdi-close"></i>
+                    <ul class="nav nav-tabs" id="setting-panel" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">GHI CHÚ</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="setting-content">
+                        <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+                            <div class="add-items d-flex px-3 mb-0">
+                                <form class="form w-100">
+                                    <div class="form-group d-flex">
+                                        <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                                        <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Thêm</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="list-wrapper px-3">
+                                <ul class="d-flex flex-column-reverse todo-list">
+                                    <li>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="checkbox" type="checkbox">
+                                                Tối nay đi ún cafe
+                                            </label>
+                                        </div>
+                                        <i class="remove mdi mdi-close-circle-outline"></i>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="checkbox" type="checkbox">
+                                                Mai đi học ròi. chán vl
+                                            </label>
+                                        </div>
+                                        <i class="remove mdi mdi-close-circle-outline"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="events py-4 border-bottom px-3">
+                                <div class="wrapper d-flex mb-2">
+                                    <i class="mdi mdi-circle-outline text-primary mr-2"></i>
+                                    <span>Hôm nay</span>
+                                </div>
+                                <p class="mb-0 font-weight-thin text-gray">Số lượng đơn hàng đang tăng</p>
+                            </div>
+                            <div class="events pt-4 px-3">
+                                <div class="wrapper d-flex mb-2">
+                                    <i class="mdi mdi-circle-outline text-primary mr-2"></i>
+                                    <span>Ngày 30 tháng 5</span>
+                                </div>
+                                <p class="mb-0 font-weight-thin text-gray">Số lượng đơn hàng ổn định</p>
+                            </div>
+                        </div>
+                        <!-- To do section tab ends -->
+                    </div>
+                </div>
+                <!-- partial -->
+                <!-- partial:partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item nav-profile">
+                            <div class="nav-link">
+                                <div class="profile-image">
+                                    <img src="images\faces\101087561_244942329931236_4761414423816437760_n.jpg" alt="image">
+                                    <span class="online-status online"></span>
+                                    <!--change class online to offline or busy as needed-->
+                                </div>
+                                <div class="profile-name">
+                                    <p class="name">
+                                        KENDZZ
+                                    </p>
+                                    <p class="designation">
+                                        Quản trị viên
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="icon-rocket menu-icon"></i>
+                                <span class="menu-title">Dashboard</span>
+                                <span class="badge badge-success">New</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
+                                <i class="icon-check menu-icon"></i>
+                                <span class="menu-title">Bài Viết</span>
+                                <span class="badge badge-danger">2</span>
+                            </a>
+                            <div class="collapse" id="page-layouts">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="pages\posts\add-posts.html">Thêm Bài Viết</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages\posts\edit-posts.html">Sửa Bài Viết</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages\donhang\don-hang.html">
+                                <i class="icon-diamond menu-icon"></i>
+                                <span class="menu-title">Đơn Hàng</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="setting.html">
+                                <i class="icon-settings menu-icon"></i>
+                                <span class="menu-title">Setting</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">
+                                <i class=" icon-logout menu-icon"></i>
+                                <span class="menu-title">Đăng Xuất</span>
+                            </a>
+                        </li>
+                        <li class="mt-4 nav-item nav-progress">
+                            <h6 class="nav-progress-heading mt-4 font-weight-normal">
+                                Số đơn hàng hôm nay
+                                <span class="nav-progress-sub-heading">
+                                    0 Đơn
+                                </span>
+                            </h6>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6 class="nav-progress-heading mt-4 font-weight-normal">
+                                Mục tiêu
+                                <span class="nav-progress-sub-heading">
+                                    2 Đơn
+                                </span>
+                            </h6>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- partial -->
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-md-center">
+                                        <i class="mdi mdi-basket icon-lg text-success"></i>
+                                        <div class="ml-3">
+                                            <p class="mb-0">Số lượng đơn hàng</p>
+                                            <h6>5</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-md-center">
+                                        <i class="mdi mdi-rocket icon-lg text-warning"></i>
+                                        <div class="ml-3">
+                                            <p class="mb-0">Số lượng tour hoàn thành</p>
+                                            <h6>2</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-md-center">
+                                        <i class="mdi mdi-diamond icon-lg text-info"></i>
+                                        <div class="ml-3">
+                                            <p class="mb-0">Doanh Thu hàng tháng</p>
+                                            <h6>110 00 000 VND</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-md-center">
+                                        <i class="mdi mdi-chart-line-stacked icon-lg text-danger"></i>
+                                        <div class="ml-3">
+                                            <p class="mb-0">Tổng doanh thu</p>
+                                            <h6>110 000 000 VND</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 d-flex flex-column">
+                            <div class="row flex-grow">
+                                <div class="col-12 col-md-4 col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Tổng quan đơn hàng</h6>
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <div class="row">
+                                                        <div class="col-6 border-right">
+                                                            <h4>63% <i class="fas fa-chevron-up" style="color: rgb(0, 194, 146);"></i></h4>
+                                                            <p> Tháng</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h4>20% <i class="fas fa-chevron-down" style="color: #ff4b2b;"></i></h4>
+                                                            <p> Ngày</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center mt-3">
+                                                <div id="growth-chart">
+                                                    7, 10, 11, 9, 11, 16, 12, 15, 13, 8, 12, 10, 13, 10, 16, 15, 12, 8, 10, 7, 16, 12, 8, 9, 7, 12
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-12 grid-margin stretch-card">
+                                    <div class="card bg-info">
+                                        <div class="text-white py-3 px-4">
+                                            <h6 class="card-title text-white mb-0">Lượt xem hàng ngày</h6>
+                                            <p>2345 Lượt truy cập</p>
+                                            <div class="chart-container">
+                                                <canvas class="w-100 h-100" id="dashboard-lineChart-2" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-12 grid-margin stretch-card">
+                                    <div class="card bg-success">
+                                        <div class="text-white py-3 px-4">
+                                            <h6 class="card-title text-white mb-0">Lượt xem hàng tháng</h6>
+                                            <p>123281 lượt truy cập</p>
+                                            <div class="chart-container">
+                                                <canvas class="w-100 h-100" id="dashboard-lineChart-3" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Đơn hàng hằng ngày</h6>
+                                    <div class="w-75 mx-auto">
+                                        <div class="d-flex justify-content-between text-center">
+                                            <div class="wrapper">
+                                                <h4>9 90 000 VND</h4>
+                                                <small class="text-muted">Doanh thu</small>
+                                            </div>
+                                            <div class="wrapper">
+                                                <h4>2</h4>
+                                                <small class="text-muted">Số lượng tour</small>
+                                            </div>
+                                        </div>
+                                        <div id="dashboard-donut-chart" style="height:250px"></div>
+                                    </div>
+                                    <div id="legend" class="donut-legend"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Tổng doanh thu</h6>
+                                    <div class="w-75 mx-auto">
+                                        <div class="d-flex justify-content-between text-center mb-5">
+                                            <div class="wrapper">
+                                                <h4>110 00 000 VND</h4>
+                                                <small class="text-muted">Doanh thu</small>
+                                            </div>
+                                            <div class="wrapper">
+                                                <h4>5</h4>
+                                                <small class="text-muted">Tour du lịch</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="morris-line-example" style="height:250px;"></div>
+                                    <div class="w-75 mx-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row grid-margin">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Tình trạng đơn hàng</h6>
+                                    <div class="d-flex table-responsive">
+                                        <div class="btn-group mr-2">
+                                            <button class="btn btn-sm btn-info"><i class="mdi mdi-plus-circle-outline"></i> Thêm</button>
+                                        </div>
+                                        <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-light"><i class="mdi mdi-alert-circle-outline"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="mdi mdi-delete-empty"></i></button>
+                                        </div>
+                                        <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-light"><i class="mdi mdi-printer"></i></button>
+                                        </div>
+                                        <div class="btn-group ml-auto mr-2 border-0">
+                                            <input type="text" class="form-control" placeholder="Search Here">
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-light"><i class="mdi mdi-cloud"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="mdi mdi-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table mt-3 border-top">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Người đặt</th>
+                                                    <th>Tour</th>
+                                                    <th>Số tiền</th>
+                                                    <th>Số người</th>
+                                                    <th>Thành tiền</th>
+                                                    <th>Tình trạng</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Trương Xuân Khải</td>
+                                                    <td>KHÁM PHA ĐÔNG BẮC HÀ NỘI - HỒ BA BỂ - THÁC BẢN GIỐC - ĐỘNG NGƯỜM NGAO</td>
+                                                    <td>9.900.000 VND</td>
+                                                    <td>2</td>
+                                                    <td>19.800.000 VND</td>
+                                                    <td>
+                                                        <div class="badge badge-success badge-fw">Đã thanh toán</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Phan Văn Năm</td>
+                                                    <td>BẮC KINH – TỬ CẤM THÀNH – THIÊN AN MÔN – THIÊN ĐÀN – VẠN LÝ TRƯỜNG THÀNH</td>
+                                                    <td>9.900.000 VND</td>
+                                                    <td>2</td>
+                                                    <td>19.800.000 VND</td>
+                                                    <td>
+                                                        <div class="badge badge-warning badge-fw">Chưa thanh toán</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Đoàn Công Vương</td>
+                                                    <td>CHƯƠNG TRÌNH TOUR TRUNG QUỐC THƯỢNG HẢI – HÀNG CHÂU – TÔ CHÂU – BẮC KINH</td>
+                                                    <td>9.900.000 VND</td>
+                                                    <td>1</td>
+                                                    <td>9.900.000 VND</td>
+                                                    <td>
+                                                        <div class="badge badge-warning badge-fw">Chưa thanh toán</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Nguyễn Đức Mạnh</td>
+                                                    <td>CHƯƠNG TRÌNH DU LỊCH KHÁM PHÁ CAO NGUYÊN MỘC CHÂU</td>
+                                                    <td>9.900.000 VND</td>
+                                                    <td>3</td>
+                                                    <td>29.700‬.000VND</td>
+                                                    <td>
+                                                        <div class="badge badge-success badge-fw">Đã thanh toán</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Trương Xuân Khải</td>
+                                                    <td>CHƯƠNG TRÌNH DU LỊCH KHÁM PHÁ CAO NGUYÊN MỘC CHÂU</td>
+                                                    <td>9.900.000 VND</td>
+                                                    <td>3</td>
+                                                    <td>29.700‬.000VND</td>
+                                                    <td>
+                                                        <div class="badge badge-warning badge-fw">Chưa thanh toán</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between flex-column flex-sm-row mt-4">
+                                        <p class="mb-3 mb-sm-0"></p>
+                                        <nav>
+                                            <ul class="pagination pagination-info mb-0">
+                                                <li class="page-item"><a class="page-link"><i class="mdi mdi-chevron-left"></i></a></li>
+                                                <li class="page-item active"><a class="page-link">1</a></li>
+                                                <li class="page-item"><a class="page-link">2</a></li>
+                                                <li class="page-item"><a class="page-link">3</a></li>
+                                                <li class="page-item"><a class="page-link">4</a></li>
+                                                <li class="page-item"><a class="page-link"><i class="mdi mdi-chevron-right"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 center-block">
+            <div class="card">
+                <div class="card-body">
+                    <div class="wrapper d-flex align-items-center justify-content-start justify-content-sm-center">
+                        <img class="img-md rounded" src="images\faces\101087561_244942329931236_4761414423816437760_n.jpg" alt="">
+                        <div class="wrapper ml-4">
+                            <p class="mb-0 font-weight-medium">KenDzz</p>
+                            <small class="text-muted mb-0">vvqua.19it4@sict.udn</small>
+                            <p class="text-success mb-0 font-weight-medium">Designer - ADMIN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 center-block">
+            <div class="card">
+                <div class="card-body">
+                    <div class="wrapper d-flex align-items-center justify-content-start justify-content-sm-center">
+                        <img class="img-md rounded" src="images\faces\86177336_1109730696026363_496206586843234304_o.jpg" alt="">
+                        <div class="wrapper ml-4">
+                            <p class="mb-0 font-weight-medium">Chunkaiin</p>
+                            <small class="text-muted mb-0">Sarahgraves@gmail.com</small>
+                            <p class="text-success mb-0 font-weight-medium">Developer - ADMIN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partial:partials/_footer.html -->
+    <!-- partial -->
+    </div>
+    <!-- content-wrapper ends -->
+    </div>
+    <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="vendors\js\vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <script src="vendors\jquery-bar-rating\jquery.barrating.min.js"></script>
+    <script src="vendors\chart.js\Chart.min.js"></script>
+    <script src="vendors\raphael\raphael.min.js"></script>
+    <script src="vendors\morris.js\morris.min.js"></script>
+    <script src="vendors\jquery-sparkline\jquery.sparkline.min.js"></script>
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="js\off-canvas.js"></script>
+    <script src="js\hoverable-collapse.js"></script>
+    <script src="js\misc.js"></script>
+    <script src="js\settings.js"></script>
+    <script src="js\todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="js\dashboard.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+</html>
